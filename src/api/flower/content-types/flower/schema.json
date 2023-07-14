@@ -1,0 +1,55 @@
+{
+  "kind": "collectionType",
+  "collectionName": "flowers",
+  "info": {
+    "singularName": "flower",
+    "pluralName": "flowers",
+    "displayName": "flower"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "price": {
+      "type": "string"
+    },
+    "price_after_offer": {
+      "type": "string"
+    },
+    "color": {
+      "type": "string"
+    },
+    "occasion": {
+      "type": "string"
+    },
+    "image": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "type": {
+      "type": "string"
+    },
+    "offer": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::offer.offer",
+      "mappedBy": "flower"
+    },
+    "orders": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::order.order",
+      "mappedBy": "flowers"
+    }
+  }
+}

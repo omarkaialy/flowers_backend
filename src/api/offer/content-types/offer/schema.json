@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "offers",
+  "info": {
+    "singularName": "offer",
+    "pluralName": "offers",
+    "displayName": "offer"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "discount_percent": {
+      "type": "string"
+    },
+    "discount_price": {
+      "type": "string"
+    },
+    "flower": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::flower.flower",
+      "inversedBy": "offer"
+    },
+    "start_date": {
+      "type": "date"
+    },
+    "end_date": {
+      "type": "date"
+    }
+  }
+}
