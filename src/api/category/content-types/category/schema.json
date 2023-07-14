@@ -4,7 +4,8 @@
   "info": {
     "singularName": "category",
     "pluralName": "categories",
-    "displayName": "category"
+    "displayName": "category",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -13,11 +14,6 @@
   "attributes": {
     "name": {
       "type": "string"
-    },
-    "flowers": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::flower.flower"
     }
   }
 }
