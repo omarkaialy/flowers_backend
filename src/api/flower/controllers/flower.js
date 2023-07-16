@@ -11,6 +11,6 @@ module.exports = createCoreController('api::flower.flower', ({ strapi }) => ({
 
     ctx.query.populate = { image: { fields: ['url', 'blurhash'] } }
     const entities = await strapi.entityService.findMany('api::flower.flower', ctx.query);
-    return entities;
+    return { "data": entities };
   },
 }));

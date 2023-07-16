@@ -40,6 +40,10 @@
       "private": true,
       "searchable": false
     },
+    "provider": {
+      "type": "string",
+      "default": "local"
+    },
     "confirmed": {
       "type": "boolean",
       "default": false
