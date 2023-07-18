@@ -15,7 +15,7 @@ module.exports = createCoreController('api::order.order', ({ strapi }) => ({
     const filters = Object.assign({}, userFilters, newFilters);
     ctx.query.filters = filters;
 
-    ctx.query.populate = { flowers: { fileds: ['id'] } };
+    ctx.query.populate = { flowers: { populate: ['image'] } };
     console.log(ctx.query);
     const entities = await strapi.entityService.findMany('api::order.order', ctx.query);
     return { "data": entities };
