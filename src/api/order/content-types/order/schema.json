@@ -27,7 +27,7 @@
     "total_products_count": {
       "type": "string"
     },
-    "users_permissions_user": {
+    "user_id": {
       "type": "relation",
       "relation": "manyToOne",
       "target": "plugin::users-permissions.user",
