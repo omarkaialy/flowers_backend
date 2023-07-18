@@ -4,7 +4,8 @@
   "info": {
     "singularName": "offer",
     "pluralName": "offers",
-    "displayName": "offer"
+    "displayName": "offer",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -15,9 +16,6 @@
       "type": "string"
     },
     "discount_percent": {
-      "type": "string"
-    },
-    "discount_price": {
       "type": "string"
     },
     "flower": {

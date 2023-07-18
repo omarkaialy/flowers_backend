@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "2023-07-18T18:29:39.903Z"
+    "x-generation-date": "2023-07-18T19:08:47.739Z"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -1271,9 +1271,6 @@
                       "discount_percent": {
                         "type": "string"
                       },
-                      "discount_price": {
-                        "type": "string"
-                      },
                       "flower": {
                         "type": "object",
                         "properties": {
@@ -2148,9 +2145,6 @@
               "discount_percent": {
                 "type": "string"
               },
-              "discount_price": {
-                "type": "string"
-              },
               "flower": {
                 "oneOf": [
                   {
@@ -2227,9 +2221,6 @@
             "type": "string"
           },
           "discount_percent": {
-            "type": "string"
-          },
-          "discount_price": {
             "type": "string"
           },
           "flower": {
@@ -2908,9 +2899,6 @@
                                     "type": "string"
                                   },
                                   "discount_percent": {
-                                    "type": "string"
-                                  },
-                                  "discount_price": {
                                     "type": "string"
                                   },
                                   "flower": {
@@ -4624,9 +4612,6 @@
                                                                 "type": "string"
                                                               },
                                                               "discount_percent": {
-                                                                "type": "string"
-                                                              },
-                                                              "discount_price": {
                                                                 "type": "string"
                                                               },
                                                               "flower": {
