@@ -19,7 +19,8 @@
     "moment-timezone": "^0.5.43",
     "pg": "8.8.0",
     "strapi-blurhash": "^1.1.1",
-    "strapi-plugin-generate-data": "^1.0.23"
+    "strapi-plugin-generate-data": "^1.0.23",
+    "strapi-plugin-soft-delete": "^0.9.3"
   },
   "author": {
     "name": "A Strapi developer"

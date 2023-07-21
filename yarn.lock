@@ -1123,6 +1123,25 @@
     prop-types "^15.8.1"
     react-remove-scroll "^2.5.5"
 
+"@strapi/design-system@^1.8.2":
+  version "1.8.2"
+  resolved "https://registry.npmjs.org/@strapi/design-system/-/design-system-1.8.2.tgz"
+  integrity sha512-PBS/F9bCiNbM4hr6AY4QOR+QhxajLvtoJKLIhPfmmPCkPorT46DzvggTveJku/1bWiJmkVHhqytsKEhrvMsjHQ==
+  dependencies:
+    "@codemirror/lang-json" "^6.0.1"
+    "@floating-ui/react-dom" "^2.0.1"
+    "@internationalized/date" "^3.3.0"
+    "@internationalized/number" "^3.2.1"
+    "@radix-ui/react-dismissable-layer" "^1.0.4"
+    "@radix-ui/react-dropdown-menu" "^2.0.5"
+    "@radix-ui/react-focus-scope" "1.0.3"
+    "@strapi/ui-primitives" "^1.8.2"
+    "@uiw/react-codemirror" "^4.21.7"
+    aria-hidden "^1.2.3"
+    compute-scroll-into-view "^3.0.3"
+    prop-types "^15.8.1"
+    react-remove-scroll "^2.5.6"
+
 "@strapi/design-system@1.8.2":
   version "1.8.2"
   resolved "https://registry.npmjs.org/@strapi/design-system/-/design-system-1.8.2.tgz"
@@ -1174,7 +1193,7 @@
     plop "2.7.6"
     pluralize "8.0.0"
 
-"@strapi/helper-plugin@^4.6.1":
+"@strapi/helper-plugin@^4.11.5", "@strapi/helper-plugin@^4.6.1":
   version "4.11.5"
   resolved "https://registry.npmjs.org/@strapi/helper-plugin/-/helper-plugin-4.11.5.tgz"
   integrity sha512-5nPAcL+kRIVzL2O7e2SRSm73DFxanWu3t6aSXpiHko8tQ8weu1ca7sxrYh/hPNxqSWpZo6vLCMvn5IXos3sq4Q==
@@ -1212,6 +1231,11 @@
   version "1.8.1"
   resolved "https://registry.npmjs.org/@strapi/icons/-/icons-1.8.1.tgz"
   integrity sha512-iafpAfqPXJbuIkBMjJ4wuPR8ovPjIlDsA9BdGsexfrlGofvePkYDHRZxzxt/VGJprFpac4+RilFtpombCYQoGg==
+
+"@strapi/icons@^1.8.2":
+  version "1.8.2"
+  resolved "https://registry.npmjs.org/@strapi/icons/-/icons-1.8.2.tgz"
+  integrity sha512-FiSYN7bDk7B8nieXLddyRgU3xMWjOcRSL2Q7b8A+pedIDLiIpfrDnsSlzmpVpU7LtQSnkOcDlFHqEXEm7zwIvg==
 
 "@strapi/icons@1.8.2":
   version "1.8.2"
@@ -1419,7 +1443,7 @@
     "@strapi/utils" "4.11.7"
     fs-extra "10.0.0"
 
-"@strapi/strapi@^4.0.0", "@strapi/strapi@^4.3.4", "@strapi/strapi@^4.9.0", "@strapi/strapi@4.11.7":
+"@strapi/strapi@^4.0.0", "@strapi/strapi@^4.11.0", "@strapi/strapi@^4.3.4", "@strapi/strapi@^4.9.0", "@strapi/strapi@4.11.7":
   version "4.11.7"
   resolved "https://registry.npmjs.org/@strapi/strapi/-/strapi-4.11.7.tgz"
   integrity sha512-cBNa/ujLSIxkPevrZ9TwN4Lrv80jbkm2wyQToF5Apv4IpaITWnACoAOyjHvSgkiwkx39ONOhW2bQ0jATY6s0yg==
@@ -1518,7 +1542,7 @@
     aria-hidden "^1.2.3"
     react-remove-scroll "^2.5.6"
 
-"@strapi/utils@4.11.7":
+"@strapi/utils@^4.11.5", "@strapi/utils@4.11.7":
   version "4.11.7"
   resolved "https://registry.npmjs.org/@strapi/utils/-/utils-4.11.7.tgz"
   integrity sha512-NAnjcKxR9rpJFKsRgqDtjImoKEUrK0Zf5y+5AAowWtteyWXYujkUxNpWYKJ8D08sFnp//MyP8fT6Rtu196ZQTQ==
@@ -3337,7 +3361,7 @@ csstype@^3.0.2:
   resolved "https://registry.npmjs.org/csstype/-/csstype-3.1.2.tgz"
   integrity sha512-I7K1Uu0MBPzaFKg4nI5Q7Vs2t+3gWWW648spaF+Rg7pI9ds18Ugn+lvg4SHczUdKlHI5LWBXyqfS8+DufyBsgQ==
 
-date-fns@2.30.0:
+date-fns@^2.30.0, date-fns@2.30.0:
   version "2.30.0"
   resolved "https://registry.npmjs.org/date-fns/-/date-fns-2.30.0.tgz"
   integrity sha512-fnULvOpxnC5/Vg3NCiWelDsLiUc9bRwAPs/+LfTLNvetFCtCTN+yQz15C/fs4AwX1R9K5GLtLfn8QW+dWisaAw==
@@ -8319,6 +8343,17 @@ strapi-plugin-generate-data@^1.0.23:
     slugify "^1.6.5"
     typescript "4.9.5"
 
+strapi-plugin-soft-delete@^0.9.3:
+  version "0.9.3"
+  resolved "https://registry.npmjs.org/strapi-plugin-soft-delete/-/strapi-plugin-soft-delete-0.9.3.tgz"
+  integrity sha512-U5EpU7q5z8w7EO+6AoL6hkU8Y74PVKabznfwzl7kGXPTyhyH+tkckTFLCBsscKOg3nY+eRAbl1caQrHvl5lgcw==
+  dependencies:
+    "@strapi/design-system" "^1.8.2"
+    "@strapi/helper-plugin" "^4.11.5"
+    "@strapi/icons" "^1.8.2"
+    "@strapi/utils" "^4.11.5"
+    date-fns "^2.30.0"
+
 stream-chain@^2.2.5, stream-chain@2.2.5:
   version "2.2.5"
   resolved "https://registry.npmjs.org/stream-chain/-/stream-chain-2.2.5.tgz"
@@ -8415,7 +8450,7 @@ style-mod@^4.0.0:
   resolved "https://registry.npmjs.org/style-mod/-/style-mod-4.0.3.tgz"
   integrity sha512-78Jv8kYJdjbvRwwijtCevYADfsI0lGzYJe4mMFdceO8l75DFFDoqBhR1jVDicDRRaX4//g1u9wKeo+ztc2h1Rw==
 
-styled-components@^5.2.1, styled-components@^5.3.3, "styled-components@>= 2", styled-components@5.3.3:
+styled-components@^5.2.1, styled-components@^5.3.3, styled-components@^5.3.6, "styled-components@>= 2", styled-components@5.3.3:
   version "5.3.3"
   resolved "https://registry.npmjs.org/styled-components/-/styled-components-5.3.3.tgz"
   integrity sha512-++4iHwBM7ZN+x6DtPPWkCI4vdtwumQ+inA/DdAsqYd4SVgUKJie5vXyzotA00ttcFdQkCng7zc6grwlfIfw+lw==
