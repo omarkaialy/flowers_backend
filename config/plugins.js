@@ -1,11 +1,6 @@
 module.exports = ({ env }) => ({
   // ...
-  'import-export-entries': {
-    enabled: true,
-    config: {
-      // See `Config` section.
-    },
-  },
+
   "entity-relationship-chart": {
     enabled: true,
     config: {
