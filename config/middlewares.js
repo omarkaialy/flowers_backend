@@ -9,6 +9,7 @@ module.exports = [
           'connect-src': ["'self'", 'https:'],
           'img-src': ["'self'", 'data:', 'blob:', 'res.cloudinary.com'],
           'media-src': ["'self'", 'data:', 'blob:', 'res.cloudinary.com'],
+          "script-src": ["'self'", "cdn.jsdelivr.net", "blob:"],
           upgradeInsecureRequests: null,
         },
       },
