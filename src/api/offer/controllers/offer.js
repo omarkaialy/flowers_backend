@@ -20,7 +20,7 @@ module.exports = createCoreController('api::offer.offer', ({ strapi }) => ({
 
     if (offer) {
       const { price } = await strapi.entityService.findOne('api::flower.flower', flower);
-      const price_after_offer = parseInt(price) * (parseInt(discount_percent) / 100)
+      const price_after_offer = parseInt(price) - (parseInt(price) * parseInt(discount_percent) / 100)
         ; const priceAfterOffer = price_after_offer.toString();
       await strapi.entityService.update('api::flower.flower', flower, {
         data: {
