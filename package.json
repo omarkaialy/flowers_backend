@@ -2,7 +2,7 @@
   "name": "flowers-back",
   "private": true,
   "version": "0.1.0",
-  "description": "A Strapi application",
+  "description": "the flower app backend",
   "scripts": {
     "develop": "strapi develop",
     "start": "strapi start",
