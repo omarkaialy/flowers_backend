@@ -1,17 +1,6 @@
 module.exports = ({ env }) => ({
   // ...
-  email: {
-    config: {
-      provider: 'strapi-provider-email-resend',
-      providerOptions: {
-        apiKey: env('RESEND_API_KEY'), // Required
-      },
-      settings: {
-        defaultFrom: 'flowersapp@backend.com',
-        defaultReplyTo: 'me@example.com',
-      },
-    }
-  },
+
   upload: {
     config: {
       provider: 'cloudinary',

@@ -8,7 +8,7 @@
     "description": ""
   },
   "options": {
-    "draftAndPublish": true
+    "draftAndPublish": false
   },
   "pluginOptions": {},
   "attributes": {
@@ -37,9 +37,6 @@
       "allowedTypes": [
         "images"
       ]
-    },
-    "type": {
-      "type": "string"
     },
     "offer": {
       "type": "relation",

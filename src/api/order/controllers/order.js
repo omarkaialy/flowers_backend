@@ -1,11 +1,11 @@
 'use strict';
 
-const { forEach } = require('../../../../config/middlewares');
 
 /**
  * order controller
  */
-
+const moment = require('moment');
+const momenttimezone = require('moment-timezone');
 const { createCoreController } = require('@strapi/strapi').factories;
 
 module.exports = createCoreController('api::order.order', ({ strapi }) => ({
@@ -45,9 +45,37 @@ module.exports = createCoreController('api::order.order', ({ strapi }) => ({
         user_id: userId,
         flowers: flowers,
         total_products_count: totalCount,
-        total_price: totalPrice
+        total_price: totalPrice,
+        status: 0
       }
     });
     return order;
-  }
+  }, async deliverd(ctx) {
+    const { id } = ctx.params;
+    const order = await strapi.entityService.findOne('api::order.order', id);
+    console.log(order);
+    if (order.status == 0) {
+      const timestamp = Date.now();
+      const date = new Date(timestamp);
+
+      const orderUpdated = await strapi.entityService.update('api::order.order', id, { data: { status: 1, deliverd_at: date.toISOString().slice(0, 10) } })
+      return orderUpdated;
+    }
+    else return { message: 'not allowed' };
+  },
+  async reject(ctx) {
+    const { id } = ctx.params;
+    const order = await strapi.entityService.findOne('api::order.order', id);
+    if (order.status == 0) {
+      const orderUpdated = await strapi.entityService.update('api::order.order', id, { data: { status: 2 } })
+      return orderUpdated;
+    }
+
+
+  },
+  async customFind(ctx) {
+    // const query = { ...ctx.query, populate: { flowers: { populate: ['image'] } } };
+    const entities = await strapi.entityService.findMany('api::order.order', ctx.query);
+    return { 'data': entities };
+  },
 }));
