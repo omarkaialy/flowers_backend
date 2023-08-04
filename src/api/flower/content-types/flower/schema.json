@@ -10,8 +10,32 @@
   "options": {
     "draftAndPublish": false
   },
-  "pluginOptions": {},
-  "attributes": {
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },  "attributes": {
+    "_softDeletedAt": {
+      "type": "datetime",
+      "configurable": false,
+      "writable": false,
+      "visible": false,
+      "private": true
+    },
+    "_softDeletedById": {
+      "type": "integer",
+      "configurable": false,
+      "writable": false,
+      "visible": false,
+      "private": true
+    },
+    "_softDeletedByType": {
+      "type": "string",
+      "configurable": false,
+      "writable": false,
+      "visible": false,
+      "private": true
+    },
     "name": {
       "type": "string"
     },
@@ -25,9 +49,6 @@
       "type": "string"
     },
     "color": {
-      "type": "string"
-    },
-    "occasion": {
       "type": "string"
     },
     "image": {
@@ -54,6 +75,12 @@
       "type": "relation",
       "relation": "oneToOne",
       "target": "api::category.category"
+    },
+    "occasion": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::occasion.occasion",
+      "inversedBy": "flowers"
     }
   }
 }

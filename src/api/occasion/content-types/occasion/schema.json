@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "occasions",
+  "info": {
+    "singularName": "occasion",
+    "pluralName": "occasions",
+    "displayName": "occasion"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "flowers": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::flower.flower",
+      "mappedBy": "occasion"
+    }
+  }
+}

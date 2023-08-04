@@ -10,8 +10,11 @@
   "options": {
     "draftAndPublish": false
   },
-  "pluginOptions": {},
-  "attributes": {
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },  "attributes": {
     "name": {
       "type": "string"
     },
@@ -26,6 +29,27 @@
     },
     "end_date": {
       "type": "date"
+    },
+    "_softDeletedAt": {
+      "type": "datetime",
+      "configurable": false,
+      "writable": false,
+      "visible": false,
+      "private": true
+    },
+    "_softDeletedById": {
+      "type": "integer",
+      "configurable": false,
+      "writable": false,
+      "visible": false,
+      "private": true
+    },
+    "_softDeletedByType": {
+      "type": "string",
+      "configurable": false,
+      "writable": false,
+      "visible": false,
+      "private": true
     }
   }
 }
