@@ -38,8 +38,7 @@ module.exports = ({ env }) => ({
   },
   "generate-data": {
     enabled: true,
-  }, "soft-delete": {
-    enabled: true,
   },
+
   // ...
 });
