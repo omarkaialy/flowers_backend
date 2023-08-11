@@ -13,9 +13,15 @@
     "i18n": {
       "localized": true
     }
-  },  "attributes": {
+  },
+  "attributes": {
     "name": {
-      "type": "string"
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "flowers": {
       "type": "relation",

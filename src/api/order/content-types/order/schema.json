@@ -14,7 +14,8 @@
     "i18n": {
       "localized": true
     }
-  },  "attributes": {
+  },
+  "attributes": {
     "total_price": {
       "type": "string"
     },

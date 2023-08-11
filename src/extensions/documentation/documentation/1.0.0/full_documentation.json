@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "2023-08-09T19:37:38.385Z"
+    "x-generation-date": "2023-08-11T00:13:28.179Z"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -2654,16 +2654,6 @@
                                                   }
                                                 }
                                               },
-                                              "_softDeletedAt": {
-                                                "type": "string",
-                                                "format": "date-time"
-                                              },
-                                              "_softDeletedById": {
-                                                "type": "integer"
-                                              },
-                                              "_softDeletedByType": {
-                                                "type": "string"
-                                              },
                                               "localizations": {
                                                 "type": "object",
                                                 "properties": {
@@ -2973,16 +2963,6 @@
               "example": "string or id"
             }
           },
-          "_softDeletedAt": {
-            "type": "string",
-            "format": "date-time"
-          },
-          "_softDeletedById": {
-            "type": "integer"
-          },
-          "_softDeletedByType": {
-            "type": "string"
-          },
           "locale": {
             "type": "string"
           }
@@ -3013,16 +2993,6 @@
                   ],
                   "example": "string or id"
                 }
-              },
-              "_softDeletedAt": {
-                "type": "string",
-                "format": "date-time"
-              },
-              "_softDeletedById": {
-                "type": "integer"
-              },
-              "_softDeletedByType": {
-                "type": "string"
               },
               "locale": {
                 "type": "string"
@@ -4592,16 +4562,6 @@
                                         }
                                       }
                                     },
-                                    "_softDeletedAt": {
-                                      "type": "string",
-                                      "format": "date-time"
-                                    },
-                                    "_softDeletedById": {
-                                      "type": "integer"
-                                    },
-                                    "_softDeletedByType": {
-                                      "type": "string"
-                                    },
                                     "localizations": {
                                       "type": "object",
                                       "properties": {
@@ -4722,16 +4682,6 @@
                 }
               }
             }
-          },
-          "_softDeletedAt": {
-            "type": "string",
-            "format": "date-time"
-          },
-          "_softDeletedById": {
-            "type": "integer"
-          },
-          "_softDeletedByType": {
-            "type": "string"
           },
           "localizations": {
             "type": "object",
@@ -6421,16 +6371,6 @@
                                         }
                                       }
                                     }
-                                  },
-                                  "_softDeletedAt": {
-                                    "type": "string",
-                                    "format": "date-time"
-                                  },
-                                  "_softDeletedById": {
-                                    "type": "integer"
-                                  },
-                                  "_softDeletedByType": {
-                                    "type": "string"
                                   },
                                   "localizations": {
                                     "type": "object",
@@ -8187,16 +8127,6 @@
                                                                     }
                                                                   }
                                                                 }
-                                                              },
-                                                              "_softDeletedAt": {
-                                                                "type": "string",
-                                                                "format": "date-time"
-                                                              },
-                                                              "_softDeletedById": {
-                                                                "type": "integer"
-                                                              },
-                                                              "_softDeletedByType": {
-                                                                "type": "string"
                                                               },
                                                               "localizations": {
                                                                 "type": "object",

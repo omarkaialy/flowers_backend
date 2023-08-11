@@ -14,7 +14,8 @@
     "i18n": {
       "localized": true
     }
-  },  "attributes": {
+  },
+  "attributes": {
     "_softDeletedAt": {
       "type": "datetime",
       "configurable": false,
@@ -37,10 +38,20 @@
       "private": true
     },
     "name": {
-      "type": "string"
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "description": {
-      "type": "string"
+      "type": "text",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "price": {
       "type": "string"
@@ -49,7 +60,12 @@
       "type": "string"
     },
     "color": {
-      "type": "string"
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "image": {
       "type": "media",
